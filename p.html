@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soya Bu Ummi | Susu Kedelai Sehat</title>
+  <style>
+    :root {
+      --green: #A8D5BA;
+      --cream: #FFF7E6;
+      --beige: #E6D8C3;
+      --brown: #6B4C3B;
+      --yellow: #F7C948;
+    }
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body {background: var(--cream); color: var(--brown); line-height: 1.6;}
+
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 15px 8%; background: var(--green); color: white;
+    }
+    header h1 {font-size: 20px;}
+    nav a {
+      margin: 0 10px; text-decoration: none; color: white; font-weight: bold;
+    }
+    nav a:hover {color: var(--yellow);}
+
+    .hero {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      padding: 40px 8%;
+      background: linear-gradient(135deg, var(--cream), #fff);
+    }
+    .hero-logo{
+        max-width: 250px;
+        height: auto;
+    }
+    .hero-text {flex: 1; min-width: 280px; margin-right: 20px;}
+    .hero-text h2 {font-size: 28px; margin-bottom: 10px;}
+    .hero-text p {margin-bottom: 15px;}
+    .btn {
+      display: inline-block; padding: 10px 20px; border-radius: 8px;
+      background: var(--brown); color: white; text-decoration: none; font-weight: bold;
+    }
+    .btn:hover {background: var(--green);}
+    .hero img {
+      max-width: 150px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .section {padding: 40px 8%;}
+    .section h2 {text-align: center; margin-bottom: 25px; font-size: 24px;}
+
+    .products {
+      display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px;
+    }
+    .product-card {
+      background: white; border-radius: 12px; padding: 15px; text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .product-card img {max-width: 100%; border-radius: 10px; margin-bottom: 10px;}
+    .price {color: var(--green); font-weight: bold; margin: 5px 0;}
+
+    .about, .contact {
+      max-width: 800px; margin: auto; text-align: center;
+    }
+    footer {
+      text-align: center; padding: 15px; background: var(--brown); color: white;
+      margin-top: 20px; font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Soya Bu Ummi</h1>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <!-- Hero -->
+    <section class="hero">
+    <div class="hero-text">
+        <h2>Susu Kedelai Alami, Sehat & Segar</h2>
+        <p>Dibuat dari kedelai pilihan, tanpa pengawet, kaya protein dan cocok untuk semua usia.</p>
+        <a href="#produk" class="btn">Lihat Produk</a>
+    </div>
+    <!-- Perubahan di sini -->
+    <img src="Foto/Logo.jpg" alt="Soya Bu Ummi" class="hero-logo">
+    </section>
+
+  <!-- Produk -->
+  <section class="section" id="produk">
+    <h2>Produk Kami</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="Foto/1.jpg" alt="Soya Classic">
+        <h3>Soya Classic 500ml</h3>
+        <p class="price">Rp 15.000</p>
+        <p>Rasa original yang lembut, tanpa bahan pengawet.</p>
+      </div>
+      <div class="product-card">
+        <img src="Foto/2.jpg" alt="Soya Coklat">
+        <h3>Soya Coklat 500ml</h3>
+        <p class="price">Rp 17.000</p>
+        <p>Favorit anak-anak, dibuat dari coklat asli.</p>
+      </div>
+      <div class="product-card">
+        <img src="Foto/3.jpg" alt="Soya Kacang Merah">
+        <h3>Soya Kacang Merah</h3>
+        <p class="price">Rp 18.000</p>
+        <p>Unik dan menyehatkan dengan kacang merah organik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section class="section" id="tentang">
+    <h2>Tentang Kami</h2>
+    <div class="about">
+      <p><strong>Soya Bu Ummi</strong> adalah UMKM lokal dari Gedongkedo'an Gresik yang berdiri sejak 2022. 
+      Kami menghadirkan susu kedelai segar dengan resep tradisional dan proses modern, 
+      sehingga aman dan sehat untuk keluarga.</p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="section" id="kontak">
+    <h2>Kontak</h2>
+    <div class="contact">
+      <p>📍 Desa Gedongkedo'an, Gresik</p>
+      <p>📞 0896-xxxx-xxxx</p>
+      <p>✉ soya@bumummi.co.id</p>
+      <a href="https://wa.me/62896xxxxxxx" class="btn">Pesan via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Soya Bu Ummi | UMKM Lokal</p>
+  </footer>
+
+</body>
+</html>
